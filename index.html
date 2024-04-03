@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="logo-im.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">Portifólio</h1>
+        <div class="menu-btn" onclick="toggleSidebar()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="sidebar">
+            <a href="#sobre">Sobre mim</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contatos">Contatos</a>
+        </div>
+        <label class="switch">
+            <input type="checkbox" id="modoEscuro">
+            <span class="slider round"></span>
+        </label>
+        <hr>
+    </header>
+
+    <div class="container" id="sobre">
+        <div class="introducao">
+            <h1 class="intro">Olá, eu sou o<br><span>Igor Motta :)</span></h1>
+            <div class="button-container">
+                <button class="button" id="downloadButton">Download CV
+                    <a href="file:///C:/Users/igorb/OneDrive/Documentos/cv-igormotta-semfoto.pdf"></a>
+                </button>
+                <button class="button2" id="entrarContato">Entrar em contato
+                    <a href="mailto:igorbmotta17@gmail.com"></a>
+                </button>
+            </div>
+        </div>
+        <img src="foto-perfil-sem-fundo.png" alt="">
+    </div>
+
+    <div class="sobre">
+        <h1>Sobre mim</h1>
+        <p class="paragrafo-sobre" id="habilidades">Estudante e cursando Análise e Desenvolvimento de Sistemas com conhecimento
+            em HTML5, CSS3, JavaScript, React Native, Python, MySQL e Git. Apaixonado
+            por tecnologia e sempre em busca de aprender e aprimorar minhas habilidades
+            no desenvolvimento de software e na resolução de problemas. Comprometido com
+            a entrega de soluções de alta qualidade e sempre aberto a novos desafios e oportunidades de crescimento.
+        </p>
+    </div>
+
+    <div class="container2" >
+        <h1>Habilidades</h1>
+        <div class="skills">
+            <div class="box">
+                <img src="html-logo.png" alt="">
+                <p>HTML5</p>
+            </div>
+            <div class="box">
+                <img src="css-logo.png" alt="">
+                <p>CCS3</p>
+            </div>
+            <div class="box">
+                <img src="js-logo.png" alt="">
+                <p>JavaScript</p>
+            </div>
+            <div class="box">
+                <img src="react-logo.png" alt="">
+                <p>React Native</p>
+            </div>
+            <div class="box">
+                <img src="python-logo.png" alt="">
+                <p>Python</p>
+            </div>
+            <div class="box">
+                <img src="mysql-logo.png" alt="">
+                <p>MySQL</p>
+            </div>
+            <div class="box" id="projetos">
+                <img src="git-log.png" alt="">
+                <p>Git</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container3" >
+        <h1>Projetos</h1>
+        <div class="projetos">
+            <div class="box1">
+                <img src="print-projeto-cbf.png" alt="">
+            </div>
+            <div class="box1">
+                <img src="print-projeto-cbf.png" alt="">
+            </div>
+            <div class="box1">
+                <img src="print-projeto-cbf.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <footer class="container4" id="contatos">
+        <h1>Contatos</h1>
+        <div class="contatos">
+            <div class="icon">
+                <a href="mailto:igorbmotta17@gmail.com">
+                    <img class="logos" src="email-logo.png" alt="">
+                </a>
+                <p>E-mail<br><span class="span-icon">igorbmotta17@gmail.com</span></p>
+            </div>
+            <div class="icon">
+                <img class="logos" src="telefone-logo.png" alt="">
+                <p>Telefone<br><span class="span-icon">(48)98868-5254</span></p>
+            </div>
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/igor-motta-196b1a2b0/">
+                    <img class="logos" src="linkedin-logo.png" alt="">
+                </a>
+                <p>Linkedin<br><span class="span-icon">@igormotta</span></p>
+            </div>
+            <div class="icon">
+                <a href="https://github.com/igorbmotta">
+                    <img class="logos" src="github-logo.png" alt="">
+                </a>
+                <p>GitHub<br><span class="span-icon">@igorbmotta</span></p>
+            </div>
+        </div>
+    </footer>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <script src="script.js"></script>
+</body>
+
+</html>
