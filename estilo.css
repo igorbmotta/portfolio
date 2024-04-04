@@ -446,3 +446,8 @@ h2 {
 .projetos {
     display: inline-flex;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
