@@ -1,13 +1,3 @@
-document.getElementById('downloadButton').addEventListener('click', function() {
-    var link = document.createElement('a');
-    link.href = 'file:///C:/Users/igorb/OneDrive/Documentos/cv-igormotta.pdf'; // Insira o caminho para o seu currículo
-    link.download = 'cv-igormotta.pdf'; // Define o nome do arquivo a ser baixado
-    link.style.display = 'none';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-});
-
 document.getElementById('entrarContato').addEventListener('click', function() {
     var link = document.createElement('a');
     link.href = 'mailto:igorbmotta17@gmail.com'; // Insira o caminho para o seu currículo
