@@ -108,23 +108,18 @@ hr {
 
 .container img {
     flex-direction: row;
-    width: 300px;
-    height: 400px;
+    width: 350px;
+    height: 370px;
     margin-right: 70px;
-    border-radius: 22px;
+    
     margin-top: 100px;
     cursor: pointer;
     transition: transform 0.5s;
     filter: drop-shadow(1px 1px 20px blue);
-    box-shadow: 1px 1px 1px 1px blue;
-    background: -webkit-linear-gradient(left, #3c82e4, #0030f3);
-    background: -moz-linear-gradient(left, #3c82e4, #0030f3);
-    background: -ms-linear-gradient(left, #3c82e4, #0030f3);
-    background: -o-linear-gradient(left, #3c82e4, #0030f3);
-    background: linear-gradient(to right, #3c82e4, #0030f3);
+    
 }
 
-img:hover {
+.container img:hover {
     transform: scale(1.1);
 }
 
@@ -251,8 +246,6 @@ h2 {
     border-radius: 20px 0 0 0;
     box-shadow: 0 0 0 1px #212121;
     transition: background-color 0.3s, box-shadow 0.3s;
-    cursor: pointer;
-    transform: scale(1);
     position: relative; /* Adicione position relative para permitir sobreposição */
 }
 
@@ -273,6 +266,12 @@ h2 {
     display: block;
     margin: 0 auto 10px; /* Centralize a imagem e adicione margem abaixo */
     border: none;
+    transition: transform 80.5ms;
+    cursor: pointer;
+}    
+
+.box img:hover {
+    transform: scale(1.1);
     transition: transform 80.5ms;
 }
 
@@ -336,6 +335,8 @@ h2 {
 
 .contatos img:hover {
     box-shadow: 2px 3px 4px blue;
+    transform: scale(1.1);
+    transition: transform 80.5ms;
 }
 
 .span-icon {
@@ -435,12 +436,10 @@ h2 {
     border-radius: 20px 20px 0px 0px;
     transition: transform 0.5s;
     border-bottom: solid 5px #0030f3;
-    cursor: pointer;
 }
 
 .container3 .projetos .box1 img:hover {
-    transform: scale(1.1);
-    transition: 1s;
+    filter: blur(2px);
 }
 
 .projetos {
@@ -450,4 +449,48 @@ h2 {
 a {
     text-decoration: none;
     color: white;
+}
+
+.box1 {
+    position: relative; /* Adiciona posição relativa para o container dos projetos */
+    overflow: hidden; /* Impede que os botões ultrapassem a borda da caixa do projeto */
+}
+
+.projeto-button {
+    position: absolute;
+    bottom: 10px; /* Ajusta a distância dos botões em relação à borda inferior */
+    left: 50%; /* Posiciona os botões no centro horizontal */
+    transform: translateX(-50%); /* Move os botões para a esquerda pela metade de sua largura */
+    display: flex; /* Ativa o modelo de layout flexbox */
+    justify-content: space-between; /* Distribui o espaço disponível entre os botões */
+    opacity: 0;
+    transition: opacity 0.3s;
+    margin-bottom: 110px;
+    gap: 8px;
+}
+
+.box1:hover .projeto-button {
+    opacity: 1;
+}
+
+.box1:hover img {
+    filter: blur(2px);
+}
+
+.projeto-button button {
+    background: #0935e8;
+    border: none;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projeto-button button:hover {
+    transform: scale(1.05); /* Aumenta um pouco o tamanho do botão ao passar o mouse */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra suave ao botão */
 }
